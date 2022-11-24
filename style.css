@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+body {
+    font-family: "Inter",Georgia, 'Times New Roman', Times, serif;
+    background-color: hsl(36, 100%, 99%);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section-1"
+    "section-2"
+    "section-3";
+    max-width: 360px;
+    height: auto;
+    gap: 1.5rem;
+}
+
+p {
+    color: hsl(236, 13%, 42%);
+}
+
+header {
+    grid-area: header;
+}
+.section-1 {
+    grid-area: section-1;
+}
+
+.section-2 {
+    grid-area: section-2;
+}
+
+.section-3 {
+    grid-area: section-3;
+}
+
+.section-2 {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 20px;
+    
+}
+
+.section-2 h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+    margin: 0;
+}
+
+button {
+    border: none;
+    padding: 10px 25px;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+}
+
+.section-pics > img {
+    max-width: 100.46px;
+    max-height: 187.4px;
+    padding-right: 20px;
+}
+
+.desktop-image {
+    display: none;
+}
+
+.mobile-image {
+    max-width: 360px;
+}
+
+div h1 {
+    color: hsl(240, 100%, 5%);
+    font-weight: 800;
+    font-size: 2.9rem;
+    margin: 0;
+}
+
+/* The hover effects */
+
+a:hover, h3:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.section-2 h3:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+div > h2 {
+    color: hsl(233, 8%, 79%);
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.section-3-01, .section-3-02, .section-3-03{
+    display: flex;
+}
+
+header .logo {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  
+    /* The body tag */
+    body {
+        padding: 0;
+        margin: 0;
+
+        width: 1440px;
+        height: 1024px;
+    }
+
+    /* The Overall Grid layout */
+    main {
+        max-width: none;
+        width: 1105.6px;
+        height: 808.4px;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-areas: 
+        "header header header"
+        "section-1 section-1 section-2 "
+        "section-3 section-3 section-3";
+        gap: 1.5rem;
+    }
+
+    /* The individual grid layouts of the different sections */
+    .section-1 {
+        display: grid;
+        grid-template-areas: 
+        "image image"
+        "section-text section-paragraph";
+        gap: 1.5rem;
+    }
+
+    .section-image {
+        grid-area: image;
+    }
+    .section-text {
+        grid-area: section-text;
+    }
+
+    .section-paragraph {
+        grid-area: section-paragraph;
+        padding-right: 85px;
+    }
+
+    .section-3 {
+        display: grid;
+        grid-template-areas: 
+        "01 02 03";
+        grid-auto-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+
+    /* The nav area styling */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul {
+        list-style-type: none;
+        text-align: right;
+    }
+
+    ul li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        text-align: right;
+        color: hsl(236, 13%, 42%);
+    }
+
+    .desktop-image {
+        display: block;
+        width: 728.07px;
+        height: 292.42px;
+        height: auto;
+    }
+    
+    .mobile-image {
+        display: none;
+    }
+
+
+    h2 {
+        margin: 0;
+    }
+
+}
