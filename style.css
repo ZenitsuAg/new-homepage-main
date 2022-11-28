@@ -114,10 +114,9 @@ header .logo {
     /* The body tag */
     body {
         padding: 0;
-        margin: 0;
-
-        width: 1440px;
-        height: 1024px;
+        margin: 0 auto;
+        max-width: 1440px;
+        max-height: 1024px;
     }
 
     /* The Overall Grid layout */
