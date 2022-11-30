@@ -53,11 +53,12 @@ header {
     margin: 0;
 }
 
-button {
+.section-1 a {
     border: none;
     padding: 10px 25px;
     background-color: hsl(5, 85%, 63%);
     color: hsl(36, 100%, 99%);
+    text-decoration: none;
 }
 
 .section-pics > img {
@@ -87,7 +88,7 @@ a:hover, h3:hover {
     color: hsl(5, 85%, 63%);
 }
 
-button:hover {
+.section-1 a:hover {
     background-color: hsl(240, 100%, 5%);
 }
 
@@ -114,7 +115,6 @@ header .logo {
     /* The body tag */
     body {
         padding: 0;
-        margin: 0 auto;
         max-width: 1440px;
         max-height: 1024px;
     }
